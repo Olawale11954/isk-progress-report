@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERCONTINENTAL SCHOOLS, KANO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@100;200;300;400;600;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/307172a5f5.js" crossorigin="anonymous"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+           <img src="images/user.png" class="user-img" onclick="toggleMenu()">
+           <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="contact.html">CONTACTS</a></li>
+               <li><a href="weather.html">WEATHER APP</a></li>
+               <li><a href="imgsearch.html">SEARCH IMAGES</a></li>
+              </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+         </div>
+        </div>
+        <div class="menu-bar" id="userProfile">
+         <div class="submenu">
+            <a href="maryam.html" class="textbox-links">
+               <p>FELICIA OCHIAGA</p> 
+               </a>
+            <a href="#" class="textbox-links">
+               <p>computer</p> 
+               </a>
+            <a href="images/Halima CV.docx" download class="textbox-links">
+               <p>Download Week 1 Report <i class="fa-solid fa-download"></i></p> 
+               </a>
+            <a href="index.html" class="textbox-links">
+               <p>Back to home page <i class="fa-solid fa-home"></i></p> 
+               </a>
+         </div>
+        </div>
+        
+        <section>
+         
+               <div class="toast">
+                  <div class="toast-content">
+                     <i class="fas fa-solid fa-check check"></i>
+                     <div class="message">
+                        <span class="text text-1">Notification</span>
+                        <span class="text text-2">Allow the page to load for 5 seconds after clicking on submit button, <br> to avoid duplicate submition.</span>
+                     </div>
+                  </div>
+             <i class="fa-solid fa-xmark close"></i>   
+                  <div class="progress"></div>
+               </div>
+               <button class="show-btn">Show Notification</button>
+            </div>
+            <div class="contact-col">
+         
+                <form name="submit-to-google-sheet">
+          
+                   <div class="input-group">
+                      <label>Full Name</label>
+                      <input type="text" name="Name" placeholder="Student name" required>
+                      
+                   </div>
+          
+                   <div class="input-group"> 
+                      <label>Topic</label>
+                      <input type="text" name="Topic" placeholder="Enter Topic" required>
+                      
+                   </div>
+                    <div class="input-group"> 
+                      <label>Date</label>
+                      <input type="date" name="Date" id="date">
+                      
+                   </div>
+          
+                   <div class="input-group">
+                      <label>Time</label>
+                      <select class="select-btn" name="Time">
+                        <option value="">Select time range</option>
+                        <option value="8:00 - 9:00">8:00 - 9:00</option>
+                        <option value="9:00 - 10:00">9:00 - 10:00</option>
+                        <option value="10:00 - 11:00">10:00 - 11:00</option>
+                        <option value="11:00 - 12:00">11:00 - 12:00</option>
+                        <option value="12:00 - 1:00">12:00 - 1:00</option>
+                        <option value="1:00 - 2:00">1:00 - 2:00</option>
+                        <option value="2:00 - 3:00">2:00 - 3:00</option>
+                        <option value="3:00 - 4:00">3:00 - 4:00</option>
+                        <option value="4:00 - 5:00">4:00 - 5:00</option>
+                        
+                      </select>
+                      
+                   </div>
+          
+                   <div class="input-group">
+                      <label>Select Day</label>
+                      <select class="select-btn" name="Day" class="state-options">
+                       <option value="">Select Day</option>
+                       <option value="Monday">Monday</option>
+                       <option value="Tuesday">Tuesday</option>
+                       <option value="Wednesday">Wednesday</option>
+                       <option value="Thursday">Thursday</option>
+                       <option value="Friday">Friday</option>
+                       <option value="Saturday">Saturday</option>
+                       
+                    </select><br>
+                   </div>
+                   <div class="input-group">
+                    <label>Task Accomplished</label>
+                    <textarea rows="5" name="Task"></textarea>
+                   
+                 </div>
+          
+                 <div id="myButton">
+                  <button type="submit" id="submitButton">Submit</button>
+                  <div class="spinner" id="spinner"></div>
+               </div>
+        
+        
+                   <span id="msg"></span>
+                </form>
+
+             </div>
+        </section>
+       
+        
+</body>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+             navLinks.style.right = "0";
+          }
+          function hideMenu(){
+             navLinks.style.right = "-200px";
+          }
+
+          
+      let userProfile = document.getElementById("userProfile");
+
+         function toggleMenu(){
+            userProfile.classList.toggle("open-menu");
+         }
+
+     </script>
+</html>
