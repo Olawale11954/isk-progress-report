@@ -103,8 +103,8 @@ nav{
     100%{
         transform: translateX(0);
     }
-
-    #preloader{
+}
+ #preloader{
     background: #333 url(images/loading-green-loading.gif) no-repeat center center;
     background-size: 15%;
     height: 100vh;
@@ -112,4 +112,3 @@ nav{
     position: fixed;
     z-index: 100;
   }
-}
