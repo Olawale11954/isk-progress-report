@@ -212,3 +212,11 @@ nav .fa{
     line-height: 25px;
     margin-top: 20px;
 }
+#preloader{
+    background: #333 url(images/loading-green-loading.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
