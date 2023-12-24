@@ -31,7 +31,7 @@ body{
     cursor: pointer;
 }
 .container h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ body{
     cursor: pointer;
 }
 nav{
-    display:flex;
+    display: flex;
     padding:2%, 6%;
     justify-content: space-between;
     align-items: left;
@@ -83,7 +83,7 @@ nav .fa{
     display: none;
  }
 
- @media(max-width:700px){
+ @media(max-width:490px){
     .text-box h1{
        font-size: 20px; 
     }
@@ -123,19 +123,28 @@ nav .fa{
     .submenu{
         margin-left: 50px;
     }
+      .update-picture{
+        background: #f44336;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        padding: 10px 10px;
+        border-radius: 8px;
+       font-size: 14px;
+        cursor: pointer;
+    }
     
  }
 .profile-editor{
     border: 0;
     outline: 0;
     background: #012414;
-    font-size: 18px;
+    font-size: 12px;
     color: #fff;
     border-radius: 8px;
     padding: 10px 10px;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 20px;
 }
 
 .fa-right-from-bracket{
@@ -170,7 +179,7 @@ nav .fa{
 
 .notification-box{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 25px 35px;
     position: inherit;
     top: 75%;
@@ -182,7 +191,7 @@ nav .fa{
    
 }
 .notification-box h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
     text-transform: capitalize;
@@ -194,7 +203,7 @@ nav .fa{
     margin-right: 20px;
 }
 .notification-box p{
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 20px;
     text-align: center;
     color: #333;
