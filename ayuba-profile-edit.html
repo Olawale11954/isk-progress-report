@@ -15,6 +15,9 @@ rel="stylesheet">
  
 </head>
 <body>
+  <div id="preloader">
+
+  </div>
   <section class="header">
     <nav>
        <div class="nav-links" id="navLinks">
@@ -123,5 +126,16 @@ var navLinks = document.getElementById("navLinks");
              navLinks.style.right = "-300px";
           }
   </script>
+  <script>
+      
+  var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+     loader.style.display = "block";
+      setTimeout(function(){
+        loader.style.display = "none";
+        }, 3000);
+        });
+        
+     </script>
 </body>
 </html>
