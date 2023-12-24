@@ -16,10 +16,7 @@ rel="stylesheet">
 <body>
     <section class="header">
         <nav>
-        
-     
-        
-           
+       
            <div class="nav-links" id="navLinks">
               <i class="fa fa-times" onclick="hideMenu()"></i>
               <ul>
@@ -138,7 +135,7 @@ rel="stylesheet">
         </section>
       
         
-</body>
+
 <script>
 
 
@@ -205,4 +202,17 @@ function toggleMenu(){
 
         
      </script>
+          
+      <script>
+      
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+          loader.style.display = "block";
+          setTimeout(function(){
+            loader.style.display = "none";
+          }, 3000);
+        });
+        
+      </script>
+    </body>
 </html>
