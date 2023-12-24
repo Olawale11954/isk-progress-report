@@ -14,6 +14,9 @@ rel="stylesheet">
 <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <section class="header">
         <nav>
        <div class="nav-links" id="navLinks">
@@ -130,7 +133,7 @@ rel="stylesheet">
         </section>
        
         
-</body>
+
 <script>
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxg-STUQcIAYgHnCQiHTMW76e5bRQ2Pz_2fN8MSmE1Cz0HFbnf3KuweTSHqs8JGR6qhvA/exec'
@@ -192,4 +195,16 @@ form.addEventListener('submit', e => {
         }
 
      </script>
+    <script>
+      
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+          loader.style.display = "block";
+          setTimeout(function(){
+            loader.style.display = "none";
+          }, 3000);
+        });
+        
+    </script>
+</body>
 </html>
