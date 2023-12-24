@@ -15,6 +15,9 @@ rel="stylesheet">
 
 
 	<body>
+		 <div id="preloader">
+
+  </div>
 		<nav>
 			<ul>
 			  <li><a href="index.html"><i class="fa-solid fa-power-off"></i></a></li>
@@ -83,6 +86,18 @@ rel="stylesheet">
 	
 	
 	</script>
+		     
+      <script>
+      
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+          loader.style.display = "block";
+          setTimeout(function(){
+            loader.style.display = "none";
+          }, 3000);
+        });
+        
+      </script>
 	
 	</body>
 	</html>
