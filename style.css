@@ -133,7 +133,7 @@ nav .fa{
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    position: inherit;
+    position: relative;
 }
 .input-group{
     width: 100%;
